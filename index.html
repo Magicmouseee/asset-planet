@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Planet</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Modellerin listeleneceği alan */
+        .model-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Her bir model kartı */
+        .model-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .model-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Model görseli (Thumbnail) */
+        .model-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background-color: #e0e0e0;
+        }
+
+        /* Kart içerik alanı */
+        .model-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .model-info h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #222;
+        }
+
+        /* İndirme butonu */
+        .download-btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+        }
+
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+        <span class="logo-icon">🧊</span> Asset Planet
+    </div>
+    
+    <nav class="nav-links">
+        <a href="#all">All Models</a>
+        <a href="#characters">Characters</a>
+        <a href="#environments">Environments</a>
+        <a href="#props">Props</a>
+        
+    </nav>
+
+    <div class="header-actions">
+        <input type="text" placeholder="Search assets..." class="search-input">
+        <button class="theme-toggle" id="themeBtn">🌙</button>
+    </div>
+    </header>
+
+    <section class="model-gallery">
+        
+        <!-- Model Kartı 1 -->
+        <article class="model-card">
+            <img src="" alt="Low Poly Tree">
+            <div class="model-info">
+                <h3>Low Poly Tree</h3>
+                <a href="model-detay.html" class="download-btn">View Model</a>
+            </div>
+        </article>
+
+        <!-- Model Kartı 2 -->
+        <article class="model-card">
+            <img src="" alt="Sci-Fi Weapon">
+            <div class="model-info">
+                <h3>Sci-Fi Blaster</h3>
+                <a href="model-detay.html" class="download-btn">View Model</a>
+            </div>
+        </article>
+
+        <!-- Model Kartı 3 -->
+        <article class="model-card">
+            <img src="" alt="Character Base">
+            <div class="model-info">
+                <h3>Stylized Character</h3>
+                <a href="model-detay.html" class="download-btn">View Model</a>
+            </div>
+        </article>
+
+        <article class="model-card">
+            <img src="" alt="Low Poly Tree">
+            <div class="model-info">
+                <h3>Low Poly Tree</h3>
+                <a href="model-detay.html" class="download-btn">View Model</a>
+            </div>
+        </article>
+
+        <!-- Model Kartı 2 -->
+        <article class="model-card">
+            <img src="" alt="Sci-Fi Weapon">
+            <div class="model-info">
+                <h3>Sci-Fi Blaster</h3>
+                <a href="model-detay.html" class="download-btn">View Model</a>
+            </div>
+        </article>
+
+        <!-- Model Kartı 3 -->
+        <article class="model-card">
+            <img src="" alt="Character Base">
+            <div class="model-info">
+                <h3>Stylized Character</h3>
+                <a href="model-detay.html" class="download-btn">View Model</a>
+            </div>
+        </article>
+
+        <!-- Yeni modeller eklemek için yukarıdaki <article> bloklarını çoğaltabilirsin -->
+
+    </section>
+
+</body>
+</html>

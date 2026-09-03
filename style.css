@@ -1,0 +1,71 @@
+/* Header Tasarım Stili (Ortalanmış Yapı) */
+header {
+    display: flex;
+    flex-direction: column; /* Elemanları alt alta hizalamak istersen */
+    align-items: center;    /* Yatayda tam ortalar */
+    justify-content: center;
+    gap: 15px;              /* Elemanlar arasındaki boşluk */
+    padding: 20px 40px;
+    color: white;
+
+    background-color: #121212; /* Arka plan ile birebir aynı */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* İnce şeffaf çizgi */
+    box-shadow: none; /* Ağır gölgeyi kaldırıyoruz */
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background-color: #2a2a2a;
+    color: white;
+    outline: none;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+body {
+    background-color: #121212;
+    /* İnce, şeffaf ızgara deseni */
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 30px 30px; /* Izgara kare boyutu */
+}
+
+* {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
