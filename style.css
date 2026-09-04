@@ -23,6 +23,11 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.logo-resize{
+   height: auto;
+   width: 100px;
+}
+
 .nav-links a {
     color: #ccc;
     text-decoration: none;
