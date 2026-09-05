@@ -74,3 +74,165 @@ body {
 * {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
+
+.blog-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 24px;
+    background-color: #1e1e1e; /* Koyu tema zemin */
+    border-radius: 12px;
+    border: 1px solid #333;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+
+.blog-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.blog-meta {
+    font-size: 0.9rem;
+    color: #888888;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.blog-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+.asset-highlights {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.asset-highlights li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.blog-screenshots {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.screenshot-img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #333;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.screenshot-img:hover {
+    transform: scale(1.04);
+    border-color: #555;
+}
+
+.blog-cover {
+    width: 100%;
+    max-height: 380px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+}
+
+.cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.logo-link {
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    color: inherit;        /* Mevcut yazı rengini korur */
+    display: inline-block;
+}
+
+.logo-link:hover {
+    opacity: 0.9;          /* Tıklanabilir olduğunu hissettiren hafif saydamlaşma efekti */
+}
+
+ header {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Modellerin listeleneceği alan */
+        .model-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Her bir model kartı */
+        .model-card {
+            background-color: #353535;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .model-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Model görseli (Thumbnail) */
+        .model-card img {
+            width: 100%;
+            object-fit: cover;
+            background-color: #e0e0e0;
+        }
+
+        /* Kart içerik alanı */
+        .model-info {
+            padding: 15px;
+            text-align: center;
+            background-color: #353535;
+        }
+
+        .model-info h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: #ffffff;
+        }
+
+        /* İndirme butonu */
+        .download-btn {
+            display: inline-block;
+            background-color: #FD9A30;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+        }
+
+        .download-btn:hover {
+            background-color: #ca7b26;
+        }

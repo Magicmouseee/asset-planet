@@ -5,84 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asset Planet</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        
-        header {
-            background-color: #1a1a1a;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
 
-        /* Modellerin listeleneceği alan */
-        .model-gallery {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        /* Her bir model kartı */
-        .model-card {
-            background-color: #353535;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            transition: transform 0.2s ease-in-out;
-        }
-
-        .model-card:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Model görseli (Thumbnail) */
-        .model-card img {
-            width: 100%;
-            object-fit: cover;
-            background-color: #e0e0e0;
-        }
-
-        /* Kart içerik alanı */
-        .model-info {
-            padding: 15px;
-            text-align: center;
-            background-color: #353535;
-        }
-
-        .model-info h3 {
-            margin: 0 0 10px 0;
-            font-size: 1.1rem;
-            color: #ffffff;
-        }
-
-        /* İndirme butonu */
-        .download-btn {
-            display: inline-block;
-            background-color: #FD9A30;
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.2s ease;
-        }
-
-        .download-btn:hover {
-            background-color: #ca7b26;
-        }
-    </style>
 </head>
 <body>
 
     <header>
+        <a href="index.html" class="logo-link">
         <div class="logo">
-        <img src="img/logo.png" alt="" class="logo-resize"> Asset Planet
-    </div>
+            <img src="img/logo.png" alt="Asset World Logo" class="logo-resize"> Asset Planet
+        </div>
+    </a>
     
     <nav class="nav-links">
         <a href="#all">All Models</a>
@@ -104,16 +36,17 @@
         <article class="model-card">
             <img src="img/Cover2.png" alt="Kitchen Essentials" style="object-fit: contain;">
             <div class="model-info">
-                <h3>Kitchen Essentials - Low Poly 3D Asset Pack</h3>
-                <a href="https://lauvai.itch.io/kitchen-pack" class="download-btn" target="_blank">View Model</a>
+                <h3>Kitchen Essentials - Low Poly 3D Asset Pack 1</h3>
+                <a href="kitchenpack1.html" class="download-btn" target="_blank">View Model</a>
             </div>
         </article>
 
         <!-- Model Kartı 2 -->
         <article class="model-card">
-            <img src="img/Cover3.png" alt="Kitchen Essentials" style="object-fit: contain;">
+            <img src="img/KitchenPack2/Cover.png" alt="Kitchen Essentials" style="object-fit: contain;">
             <div class="model-info">
-                <span style="font-size: 32px;">🔒</span>
+                <h3>Kitchen Essentials - Low Poly 3D Asset Pack 2</h3>
+                <a href="kitchenpack2.html" class="download-btn" target="_blank">View Model</a>
             </div>
         </article>
 
