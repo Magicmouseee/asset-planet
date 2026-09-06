@@ -1,7 +1,6 @@
 /* Header Tasarım Stili (Ortalanmış Yapı) */
 header {
     display: flex;
-    flex-direction: column; /* Elemanları alt alta hizalamak istersen */
     align-items: center;    /* Yatayda tam ortalar */
     justify-content: center;
     gap: 15px;              /* Elemanlar arasındaki boşluk */
@@ -216,9 +215,17 @@ body {
         }
 
         .model-info h3 {
-            margin: 0 0 10px 0;
-            font-size: 1.1rem;
+            margin: 0 0 5px 0;
+            font-size: 1.0rem;
             color: #ffffff;
+            font-weight: 700;
+        }
+
+        .model-info h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.0rem;
+            color: #b3b3b3;
+            font-weight: 400;
         }
 
         /* İndirme butonu */
@@ -236,3 +243,108 @@ body {
         .download-btn:hover {
             background-color: #ca7b26;
         }
+
+        .hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 5%;
+  background: linear-gradient(135deg, #181818 0%, #222222 100%);
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.hero-content {
+  max-width: 550px;
+}
+
+.hero-tag {
+  color: #ff9800;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin: 12px 0;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  color: #aaa;
+  font-size: 1.05rem;
+  margin-bottom: 24px;
+}
+
+.hero-media img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.container {
+  max-width: 1250px; /* Sitenin içeriğinin yayılacağı maks genişlik */
+  margin: 0 auto;    /* Sağdan ve soldan eşit uzaklıkta tam ortalar */
+  padding: 0 24px;   /* Ekran küçüldüğünde kenarlara yapışmaması için */
+}
+
+/* Arka plan ekranın tamamını kaplar */
+.hero-section {
+  background-color: #181818;
+  border-bottom: 1px solid #2a2a2a;
+  padding: 40px 0; /* Üst-alt boşluk */
+  height: 300px;
+}
+
+/* İçerik container sayesinde kartlarla tam aynı çizgide durur */
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Buton Kapsayıcısı */
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 24px;
+}
+
+/* Ortak Buton Stili */
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Ana Buton (Explore Assets) */
+.btn-primary {
+  background-color: #ff9800; /* Vurgu rengi */
+  color: #121212;
+}
+
+.btn-primary:hover {
+  background-color: #e68a00;
+  transform: translateY(-2px);
+}
+
+/* İkincil Buton (Watch Timelapses) */
+.btn-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #333333;
+}
+
+.btn-secondary:hover {
+  background-color: #222222;
+  border-color: #555555;
+  transform: translateY(-2px);
+}
